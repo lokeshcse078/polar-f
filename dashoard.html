@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Dashboard</h2>
+<button onclick="logout()">Logout</button>
+
+<script>
+if (!localStorage.getItem("token")) {
+    window.location.href = "index.html";
+}
+
+function logout() {
+    localStorage.clear();
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
